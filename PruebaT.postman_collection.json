@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "b4c9fc92-362e-4e23-a892-92540d5707c5",
+		"name": "PruebaT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17665052"
+	},
+	"item": [
+		{
+			"name": "FindAll(Artistas)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/artistas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"artistas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAll(Obras)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/obras/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"obras",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAll(Museos)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/museos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"museos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/obras/consulta1?filtro=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"obras",
+						"consulta1"
+					],
+					"query": [
+						{
+							"key": "filtro",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/museos/consulta2?parametro=Medellin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"museos",
+						"consulta2"
+					],
+					"query": [
+						{
+							"key": "parametro",
+							"value": "Medellin"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
